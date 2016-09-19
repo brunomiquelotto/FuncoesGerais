@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FuncoesGerais</name>
+    </assembly>
+    <members>
+        <member name="M:Util.FuncoesGerais.HasRows(System.Windows.Forms.DataGridView)">
+            <summary>
+            Metodo que verifica se existem registros em um componente DataGridView
+            </summary>
+            <param name="dgv">DataGridView que sera testado</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.HasSelectedRows(System.Windows.Forms.DataGridView)">
+            <summary>
+            Metodo que verifica se existem registro selecionados em um componente DataGridView
+            </summary>
+            <param name="dgv">DataGridView que sera testado</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.HasRows(System.Data.DataTable)">
+            <summary>
+            Metodo que verifica se existem registros em um componente DataTable
+            </summary>
+            <param name="dt">DataTable que sera testado</param>
+            <returns>True/False</returns>
+        </member>
+    </members>
+</doc>

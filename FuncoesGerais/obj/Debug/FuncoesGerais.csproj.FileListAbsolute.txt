@@ -1,0 +1,9 @@
+c:\users\raphael\documents\visual studio 2010\Projects\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.dll
+c:\users\raphael\documents\visual studio 2010\Projects\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.pdb
+c:\users\raphael\documents\visual studio 2010\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.dll
+c:\users\raphael\documents\visual studio 2010\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.pdb
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.dll
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.pdb
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.csprojResolveAssemblyReference.cache
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.dll
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.pdb
