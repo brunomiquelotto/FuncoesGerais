@@ -1,0 +1,2 @@
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\Testing\obj\x86\Debug\Testing.Form1.resources
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\Testing\obj\x86\Debug\Testing.csproj.GenerateResource.Cache

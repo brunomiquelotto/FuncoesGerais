@@ -1,0 +1,100 @@
+﻿using System.Collections.Generic;
+
+namespace Util
+{
+    public class SQLBuilder
+    {
+
+        public SQLBuilder()
+        {
+            
+        }
+
+        public SQLBuilder(string _table, SQLType _type)
+        {
+            this.Table = _table;
+            this.Type = _type;
+        }
+
+        public string Table;
+        public SQLType Type = SQLType.Insert;
+        public List<Field> Fields = new List<Field>();
+        public string Condition;
+
+        public override string ToString()
+        {
+            if (Type == SQLType.Insert)
+                return BuildInsert();
+
+            if (Type == SQLType.Update)
+                return BuildUpdate();
+
+            if (Type == SQLType.Delete)
+                return BuildDelete();
+
+            return "";
+        }
+
+        private string BuildInsert()
+        {
+            string sql;
+            string sqlValues = string.Empty;
+            string separador = "";
+            sql = string.Format("INSERT INTO {0} (", Table);
+            foreach (Field _field in Fields)
+            {
+                sql += separador + _field.column;
+                sqlValues += separador + _field.value;
+                separador = ",";
+            }
+            sql += ") VALUES (" + sqlValues + ");";
+            return sql;
+        }
+
+        private string BuildUpdate()
+        {
+            string sql;
+            string separador = ",";
+            sql = string.Format("UPDATE {0} SET ", Table);
+            foreach (Field _field in Fields)
+            {
+                sql += _field.column + " = " + _field.value + separador;
+            }
+            if (sql.Substring(sql.Length - 1) == ",")
+                sql = sql.Substring(0, sql.Length - 1);
+            sql += " WHERE " + Condition;
+            return sql;
+        }
+
+        private string BuildDelete()
+        {
+            return string.Format("DELETE FROM {0} WHERE {1}", Table, Condition);
+        }
+
+        public void AddField(string _column, string _value)
+        { 
+            this.Fields.Add(new Field(_column,_value));
+        }
+
+    }
+
+    public class Field
+    {
+        public Field(string _column, string _value)
+        {
+            this.column = _column;
+            this.value = _value;
+        }
+        public string column;
+        public string value;
+    }
+
+    public enum SQLType
+    {
+        Insert,
+        Delete,
+        Update,
+        Select
+    }   
+
+}

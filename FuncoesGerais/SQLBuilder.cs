@@ -1,0 +1,146 @@
+﻿using System.Collections.Generic;
+
+namespace Util
+{
+    public class SQLBuilder
+    {
+
+        /// <summary>
+        /// Construtor default
+        /// </summary>
+        public SQLBuilder()
+        {
+            
+        }
+
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="_table">Tabela do sql a ser gerado</param>
+        /// <param name="_type">Tipo de comando a ser gerado</param>
+        public SQLBuilder(string _table, SQLType _type)
+        {
+            this.Table = _table;
+            this.Type = _type;
+        }
+
+        /// <summary>
+        /// Tabela do comando a ser gerado
+        /// </summary>
+        public string Table;
+        /// <summary>
+        /// Tipo do SQL a ser gerado (Insert como padrão)
+        /// </summary>
+        public SQLType Type = SQLType.Insert;
+        /// <summary>
+        /// Lista de campos (Apenas para Updates e Inserts)
+        /// </summary>
+        public List<Field> Fields = new List<Field>();
+        /// <summary>
+        /// Condição para o comando SQL (Use apenas para updates e deletes)
+        /// </summary>
+        public string Condition;
+
+        /// <summary>
+        /// Gera o SQL de acordo com o seu tipo: Insert, Delete ou Update
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            if (Type == SQLType.Insert)
+                return BuildInsert();
+
+            if (Type == SQLType.Update)
+                return BuildUpdate();
+
+            if (Type == SQLType.Delete)
+                return BuildDelete();
+
+            return "";
+        }
+
+        private string BuildInsert()
+        {
+            string sql;
+            string sqlValues = string.Empty;
+            string separador = "";
+            sql = string.Format("INSERT INTO {0} (", Table);
+            foreach (Field _field in Fields)
+            {
+                sql += separador + _field.column;
+                sqlValues += separador + _field.value;
+                separador = ",";
+            }
+            sql += ") VALUES (" + sqlValues + ");";
+            return sql;
+        }
+
+        private string BuildUpdate()
+        {
+            string sql;
+            string separador = ",";
+            sql = string.Format("UPDATE {0} SET ", Table);
+            foreach (Field _field in Fields)
+            {
+                sql += _field.column + " = " + _field.value + separador;
+            }
+            if (sql.Substring(sql.Length - 1) == ",")
+                sql = sql.Substring(0, sql.Length - 1);
+            sql += " WHERE " + Condition;
+            return sql;
+        }
+
+        private string BuildDelete()
+        {
+            return string.Format("DELETE FROM {0} WHERE {1}", Table, Condition);
+        }
+
+        /// <summary>
+        /// Adiciona um campo ao SQLBuilder
+        /// </summary>
+        /// <param name="_column">Nome do campo</param>
+        /// <param name="_value">Valor do campo</param>
+        public void AddField(string _column, string _value)
+        { 
+            this.Fields.Add(new Field(_column,_value));
+        }
+
+        /// <summary>
+        /// Adiciona um campo ao SQLBuilder já formatado
+        /// </summary>
+        /// <param name="_column">Nome do campo</param>
+        /// <param name="_value">Valor do campo</param>
+        /// <param name="type">Tipo de formatação</param>
+        /// <param name="decimals">Casas decimais para campos do tipo Double</param>
+        public void AddFormatedField(string _column, string _value, FuncoesGerais.Tipos type = FuncoesGerais.Tipos.Text, int decimals = 2)
+        { 
+            this.Fields.Add(new Field(_column,_value.TrataCampoSQL(type, decimals)));
+        }
+    }
+
+    /// <summary>
+    /// Campos do comando a ser gerado (Use apenas para Inserts e Updates)
+    /// </summary>
+    public class Field
+    {
+        public Field(string _column, string _value)
+        {
+            this.column = _column;
+            this.value = _value;
+        }
+        public string column;
+        public string value;
+    }
+
+    /// <summary>
+    /// Tipos de comandos SQL
+    /// </summary>
+    public enum SQLType
+    {
+        Insert,
+        Delete,
+        Update,
+        Select
+    }   
+
+}

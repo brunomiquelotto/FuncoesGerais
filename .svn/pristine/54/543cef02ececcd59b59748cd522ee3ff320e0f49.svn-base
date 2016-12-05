@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Util
+{
+    public partial class BorderedPanel : UserControl
+    {
+        public BorderedPanel()
+        {
+            InitializeComponent();
+        }
+
+        private Color _labelColor = Color.Navy;
+        private string _titulo = "Título";
+        public Color LabelColor
+        {
+            get
+            {
+                return this._labelColor;
+            }
+            set
+            {
+                this._labelColor = value;
+                this.labelTop.BackColor = value;
+                this.label2.BackColor = value;
+                this.label3.BackColor = value;
+                this.label4.BackColor = value;
+            }
+        }
+
+        public string Titulo
+        {
+            get
+            {
+                return this._titulo;
+            }
+            set
+            {
+                this._titulo = value;
+                this.labelTop.Text = value;
+            }
+        }
+
+    }
+}

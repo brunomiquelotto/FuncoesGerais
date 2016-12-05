@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FuncoesGerais</name>
+    </assembly>
+    <members>
+        <member name="F:Util.DataGridViewCustomizado.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Util.DataGridViewCustomizado.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Util.DataGridViewCustomizado.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Util.FuncoesGerais.HasRows(System.Windows.Forms.DataGridView)">
+            <summary>
+            Metodo que verifica se existem registros em um componente DataGridView
+            </summary>
+            <param name="dgv">DataGridView que sera testado</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.HasSelectedRows(System.Windows.Forms.DataGridView)">
+            <summary>
+            Metodo que verifica se existem registro selecionados em um componente DataGridView
+            </summary>
+            <param name="dgv">DataGridView que sera testado</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.HasRows(System.Data.DataTable)">
+            <summary>
+            Metodo que verifica se existem registros em um componente DataTable
+            </summary>
+            <param name="dt">DataTable que sera testado</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="F:Util.BorderedPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Util.BorderedPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Util.BorderedPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

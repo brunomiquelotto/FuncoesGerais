@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Util;
+
+namespace Testing
+{
+    class Program
+    {
+        private static string SQLInsert()
+        {
+            var sql = new SQLBuilder();
+            sql.Table = "cli_clientes";
+            sql.Type = SQLType.Update;
+            sql.Fields.Add(new Field("cli_nome", "'Bruno'"));
+            sql.Fields.Add(new Field("cli_telefone", "'(19)35714660'"));
+            sql.Fields.Add(new Field("cli_ie_rg", "'476619968'"));
+            sql.Fields.Add(new Field("cli_cnpj_cpf", "'43993034848'"));
+            sql.Condition = "cli_id = 1";
+            return sql.ToString();
+        }
+
+        static void Main(string[] args)
+        {
+            Console.Write(SQLInsert());
+            Console.ReadKey();
+        }
+
+
+        
+    }
+}
