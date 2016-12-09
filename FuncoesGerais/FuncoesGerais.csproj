@@ -55,6 +55,12 @@
     <Compile Include="Componentes\DataGridViewCustomizado.Designer.cs">
       <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Componentes\LabelComValor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\LabelComValor.Designer.cs">
+      <DependentUpon>LabelComValor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Componentes\RegexTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
