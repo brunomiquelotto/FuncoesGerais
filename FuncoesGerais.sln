@@ -1,7 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncoesGerais", "FuncoesGerais\FuncoesGerais.csproj", "{3BCC4B63-ED7A-4A30-8CC4-DD0112D97BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{4F478818-8F1C-4F77-8E1F-B66C79BC4780}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,16 @@ Global
 		{3BCC4B63-ED7A-4A30-8CC4-DD0112D97BB6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3BCC4B63-ED7A-4A30-8CC4-DD0112D97BB6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{3BCC4B63-ED7A-4A30-8CC4-DD0112D97BB6}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4F478818-8F1C-4F77-8E1F-B66C79BC4780}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,3 +11,14 @@ C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGera
 C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.dll
 C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.csprojResolveAssemblyReference.cache
 C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.XML
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.XML
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.dll
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\bin\Debug\FuncoesGerais.pdb
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.csprojResolveAssemblyReference.cache
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.CurrencyTextBox.resources
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\Util.DataGridViewCustomizado.resources
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\Util.BorderedPanel.resources
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.csproj.GenerateResource.Cache
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.dll
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.pdb
+C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.Componentes.RegexTextBox.resources

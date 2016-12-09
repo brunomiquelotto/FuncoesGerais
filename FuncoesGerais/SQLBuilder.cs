@@ -116,6 +116,38 @@ namespace Util
         { 
             this.Fields.Add(new Field(_column,_value.TrataCampoSQL(type, decimals)));
         }
+
+        /// <summary>
+        /// Adiciona um campo double ao SQLBuilder já formatado
+        /// </summary>
+        /// <param name="_column">Nome do campo</param>
+        /// <param name="_value">Valor do campo</param>
+        /// <param name="type">Tipo de formatação</param>
+        /// <param name="decimals">Casas decimais</param>
+        public void AddFormatedField(string _column, double _value, FuncoesGerais.Tipos type = FuncoesGerais.Tipos.Currency, int decimals = 2)
+        {
+            this.Fields.Add(new Field(_column, _value.ToString().TrataCampoSQL(type, decimals)));
+        }
+
+        /// <summary>
+        /// Adiciona um campo int ao SQLBuilder já formatado
+        /// </summary>
+        /// <param name="_column">Nome do campo</param>
+        /// <param name="_value">Valor do campo</param>
+        public void AddFormatedField(string _column, int _value)
+        {
+            this.Fields.Add(new Field(_column, _value.ToString().TrataCampoSQL(FuncoesGerais.Tipos.Integer, 0)));
+        }
+
+        /// <summary>
+        /// Adiciona um campo bool ao SQLBuilder já formatado
+        /// </summary>
+        /// <param name="_column">Nome do campo</param>
+        /// <param name="_value">Valor do campo</param>
+        public void AddFormatedField(string _column, bool _value)
+        {
+            this.Fields.Add(new Field(_column, _value.ToString().TrataCampoSQL(FuncoesGerais.Tipos.Bool, 0)));
+        }
     }
 
     /// <summary>

@@ -223,15 +223,24 @@ namespace Util
             return double.TryParse(number, out value);
         }
 
+        /// <summary>
+        /// Tenta transformar a string em um tipo Double
+        /// </summary>
+        /// <param name="number">Entrada a ser convertida</param>
+        /// <returns>Valor double retornado da conversãos (0.00 em caso de falha)</returns>
         public static double ToDouble(this string number)
         {
             if (number.isValidDouble()) return double.Parse(number);
             return 0.00;
         }
-
+        /// <summary>
+        /// Tenta formatar a string em um tipo Currency (2 casas decimais)
+        /// </summary>
+        /// <param name="number">Texto a ser formatado</param>
+        /// <returns>string formatada</returns>
         public static string FormatStringToCurrency(this string number)
         {
-            return number.FormatToDecimalIfValid(2);
+            return number.ToDouble().ToString("n2");
         }
 
         public static string FormatToDecimalIfValid(this string number, int casas)
@@ -294,6 +303,12 @@ namespace Util
             return 0;
         }
 
+        /// <summary>
+        /// Formata uma string para o tipo Inteiro
+        /// </summary>
+        /// <param name="number">Valor de Entrada</param>
+        /// <param name="valorDefault">Valor a ser devolvido caso a entrada falhe na conversão</param>
+        /// <returns>Um valor string representando um inteiro</returns>
         public static string FormatStringToInteger(this string number, int valorDefault = 0)
         {
             if (!number.isValidInteger())
@@ -365,6 +380,13 @@ namespace Util
             return regex.IsMatch(input);
         }
 
+        /// <summary>
+        /// Trata um campo do tipo string para um dos tipos de dados disponíveis do banco MySQL
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="type"></param>
+        /// <param name="decimals"></param>
+        /// <returns></returns>
         public static string TrataCampoSQL(this string input, Tipos type, int decimals = 2)
         {
             if (input == null) input = "";
@@ -459,18 +481,50 @@ namespace Util
         }
 
         #endregion
-
+        /// <summary>
+        /// Tipos de dados disponíveis para o banco MySQL
+        /// </summary>
         public enum Tipos
         {
+            /// <summary>
+            /// Dado do tipo Booleano
+            /// </summary>
             Bool,
+            /// <summary>
+            /// Dado do tipo Double (Decimal, float, ou numeric do MYSQL)
+            /// </summary>
             Double,
+            /// <summary>
+            /// Campos do tipo Date (Sem hora)
+            /// </summary>
             Date,
+            /// <summary>
+            /// Campo do tipo inteiro
+            /// </summary>
             Integer,
+            /// <summary>
+            /// Campo do Tipo Datetime (também funciona para Timestamp)
+            /// </summary>
             DateTime,
+            /// <summary>
+            /// Campo do tipo Texto (Varchar ou Char)
+            /// </summary>
             Text,
+            /// <summary>
+            /// Campo do tipo Text já com o wildcard like (%)
+            /// </summary>
             TextLike,
+            /// <summary>
+            /// Campo do tipo Monetario (Decimal, numeric, double, float)
+            /// </summary>
             Currency,
+            /// <summary>
+            /// Valores 0 ou 1
+            /// </summary>
             Bit,
+            /// <summary>
+            /// Valor NULO
+            /// </summary>
             NULL
         }
     }

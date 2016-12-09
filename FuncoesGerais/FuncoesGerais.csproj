@@ -43,28 +43,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataGridViewCustomizado.cs">
+    <Compile Include="Componentes\CurrencyTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DataGridViewCustomizado.Designer.cs">
+    <Compile Include="Componentes\CurrencyTextBox.Designer.cs">
+      <DependentUpon>CurrencyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\DataGridViewCustomizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\DataGridViewCustomizado.Designer.cs">
       <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
     </Compile>
-    <Compile Include="FuncoesGerais.cs" />
-    <Compile Include="PanelForm.cs">
+    <Compile Include="Componentes\RegexTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="PanelForm.Designer.cs">
+    <Compile Include="Componentes\RegexTextBox.Designer.cs">
+      <DependentUpon>RegexTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuncoesGerais.cs" />
+    <Compile Include="Componentes\PanelForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\PanelForm.Designer.cs">
       <DependentUpon>PanelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataGridViewCustomizado.resx">
+    <EmbeddedResource Include="Componentes\CurrencyTextBox.resx">
+      <DependentUpon>CurrencyTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\DataGridViewCustomizado.resx">
       <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelForm.resx">
+    <EmbeddedResource Include="Componentes\PanelForm.resx">
       <DependentUpon>PanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\RegexTextBox.resx">
+      <DependentUpon>RegexTextBox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

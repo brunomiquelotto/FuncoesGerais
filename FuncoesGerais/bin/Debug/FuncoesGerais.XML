@@ -4,6 +4,23 @@
         <name>FuncoesGerais</name>
     </assembly>
     <members>
+        <member name="F:FuncoesGerais.CurrencyTextBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FuncoesGerais.CurrencyTextBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FuncoesGerais.CurrencyTextBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:Util.DataGridViewCustomizado.components">
             <summary> 
             Required designer variable.
@@ -20,6 +37,79 @@
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="F:FuncoesGerais.Componentes.RegexTextBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FuncoesGerais.Componentes.RegexTextBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FuncoesGerais.Componentes.RegexTextBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:FuncoesGerais.Componentes.RegexTextBox.RegexFalhou">
+            <summary>
+            Indica quando o componente já foi validado e se contem erros de validação
+            </summary>
+        </member>
+        <member name="P:FuncoesGerais.Componentes.RegexTextBox.TestarQuandoVazio">
+            <summary>
+            Recebe ou atribui se quando um texto é branco seu valor é testado
+            </summary>
+        </member>
+        <member name="P:FuncoesGerais.Componentes.RegexTextBox.CorErro">
+            <summary>
+            Recebe ou atribui a cor que será utilizada no fundo do controle quando ocorrer um erro de validação
+            </summary>
+        </member>
+        <member name="P:FuncoesGerais.Componentes.RegexTextBox.CorPadrao">
+            <summary>
+            Recebe ou atribui a cor que será utilizada no fundo do controle quando a validação obtiver exito
+            </summary>
+        </member>
+        <member name="P:FuncoesGerais.Componentes.RegexTextBox.Regex">
+            <summary>
+            Recebe ou atribui o padrão que será utilizado para testar o valor do Text ao executar o Leave
+            </summary>
+        </member>
+        <member name="M:Util.FuncoesGerais.ToDouble(System.String)">
+            <summary>
+            Tenta transformar a string em um tipo Double
+            </summary>
+            <param name="number">Entrada a ser convertida</param>
+            <returns>Valor double retornado da conversãos (0.00 em caso de falha)</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.FormatStringToCurrency(System.String)">
+            <summary>
+            Tenta formatar a string em um tipo Currency (2 casas decimais)
+            </summary>
+            <param name="number">Texto a ser formatado</param>
+            <returns>string formatada</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.FormatStringToInteger(System.String,System.Int32)">
+            <summary>
+            Formata uma string para o tipo Inteiro
+            </summary>
+            <param name="number">Valor de Entrada</param>
+            <param name="valorDefault">Valor a ser devolvido caso a entrada falhe na conversão</param>
+            <returns>Um valor string representando um inteiro</returns>
+        </member>
+        <member name="M:Util.FuncoesGerais.TrataCampoSQL(System.String,Util.FuncoesGerais.Tipos,System.Int32)">
+            <summary>
+            Trata um campo do tipo string para um dos tipos de dados disponíveis do banco MySQL
+            </summary>
+            <param name="input"></param>
+            <param name="type"></param>
+            <param name="decimals"></param>
+            <returns></returns>
         </member>
         <member name="M:Util.FuncoesGerais.HasRows(System.Windows.Forms.DataGridView)">
             <summary>
@@ -41,6 +131,78 @@
             </summary>
             <param name="dt">DataTable que sera testado</param>
             <returns>True/False</returns>
+        </member>
+        <member name="T:Util.FuncoesGerais.Tipos">
+            <summary>
+            Tipos de dados disponíveis para o banco MySQL
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Bool">
+            <summary>
+            Dado do tipo Booleano
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Double">
+            <summary>
+            Dado do tipo Double (Decimal, float, ou numeric do MYSQL)
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Date">
+            <summary>
+            Campos do tipo Date (Sem hora)
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Integer">
+            <summary>
+            Campo do tipo inteiro
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.DateTime">
+            <summary>
+            Campo do Tipo Datetime (também funciona para Timestamp)
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Text">
+            <summary>
+            Campo do tipo Texto (Varchar ou Char)
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.TextLike">
+            <summary>
+            Campo do tipo Text já com o wildcard like (%)
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Currency">
+            <summary>
+            Campo do tipo Monetario (Decimal, numeric, double, float)
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.Bit">
+            <summary>
+            Valores 0 ou 1
+            </summary>
+        </member>
+        <member name="F:Util.FuncoesGerais.Tipos.NULL">
+            <summary>
+            Valor NULO
+            </summary>
+        </member>
+        <member name="F:Util.BorderedPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Util.BorderedPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Util.BorderedPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
         </member>
         <member name="M:Util.SQLBuilder.#ctor">
             <summary>
@@ -96,6 +258,29 @@
             <param name="type">Tipo de formatação</param>
             <param name="decimals">Casas decimais para campos do tipo Double</param>
         </member>
+        <member name="M:Util.SQLBuilder.AddFormatedField(System.String,System.Double,Util.FuncoesGerais.Tipos,System.Int32)">
+            <summary>
+            Adiciona um campo double ao SQLBuilder já formatado
+            </summary>
+            <param name="_column">Nome do campo</param>
+            <param name="_value">Valor do campo</param>
+            <param name="type">Tipo de formatação</param>
+            <param name="decimals">Casas decimais</param>
+        </member>
+        <member name="M:Util.SQLBuilder.AddFormatedField(System.String,System.Int32)">
+            <summary>
+            Adiciona um campo int ao SQLBuilder já formatado
+            </summary>
+            <param name="_column">Nome do campo</param>
+            <param name="_value">Valor do campo</param>
+        </member>
+        <member name="M:Util.SQLBuilder.AddFormatedField(System.String,System.Boolean)">
+            <summary>
+            Adiciona um campo bool ao SQLBuilder já formatado
+            </summary>
+            <param name="_column">Nome do campo</param>
+            <param name="_value">Valor do campo</param>
+        </member>
         <member name="T:Util.Field">
             <summary>
             Campos do comando a ser gerado (Use apenas para Inserts e Updates)
@@ -104,23 +289,6 @@
         <member name="T:Util.SQLType">
             <summary>
             Tipos de comandos SQL
-            </summary>
-        </member>
-        <member name="F:Util.BorderedPanel.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:Util.BorderedPanel.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:Util.BorderedPanel.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
             </summary>
         </member>
     </members>
