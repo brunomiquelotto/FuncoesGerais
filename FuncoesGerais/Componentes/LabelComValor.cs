@@ -50,7 +50,7 @@ namespace FuncoesGerais.Componentes
                 AtualizaTexto();
             }
         }
-        private string _textoReplace;
+        private string _textoReplace = string.Empty;
         public string TextoReplace 
         {
             get { return this._textoReplace; }
