@@ -24,3 +24,4 @@ C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais
 C:\Users\Bruno\Documents\Visual Studio 2013\Projects\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.Componentes.RegexTextBox.resources
 C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.CurrencyTextBox.resources
 C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.Componentes.RegexTextBox.resources
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\FuncoesGerais\obj\Debug\FuncoesGerais.Componentes.DateTextBox.resources

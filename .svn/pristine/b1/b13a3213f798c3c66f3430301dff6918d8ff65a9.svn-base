@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BCC4B63-ED7A-4A30-8CC4-DD0112D97BB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FuncoesGerais</RootNamespace>
+    <AssemblyName>FuncoesGerais</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\FuncoesGerais.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Componentes\CurrencyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\CurrencyTextBox.Designer.cs">
+      <DependentUpon>CurrencyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\DataGridViewCustomizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\DataGridViewCustomizado.Designer.cs">
+      <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\DateTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\DateTextBox.Designer.cs">
+      <DependentUpon>DateTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\LabelComValor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\LabelComValor.Designer.cs">
+      <DependentUpon>LabelComValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\RegexTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\RegexTextBox.Designer.cs">
+      <DependentUpon>RegexTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuncoesGerais.cs" />
+    <Compile Include="Componentes\PanelForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\PanelForm.Designer.cs">
+      <DependentUpon>PanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Componentes\CurrencyTextBox.resx">
+      <DependentUpon>CurrencyTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\DataGridViewCustomizado.resx">
+      <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\DateTextBox.resx">
+      <DependentUpon>DateTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\PanelForm.resx">
+      <DependentUpon>PanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\RegexTextBox.resx">
+      <DependentUpon>RegexTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

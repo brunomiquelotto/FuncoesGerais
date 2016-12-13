@@ -1,0 +1,14 @@
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\teste.exe.config
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\teste.exe
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.Resources.resources
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.vbproj.GenerateResource.Cache
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.exe
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.xml
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.pdb
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\teste.pdb
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\teste.xml
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\FuncoesGerais.dll
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\FuncoesGerais.pdb
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\bin\Debug\FuncoesGerais.xml
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.vbprojResolveAssemblyReference.cache
+C:\CRISTAL SOFTWARES\FONTES C#\FuncoesGerais\teste\obj\Debug\teste.Form1.resources

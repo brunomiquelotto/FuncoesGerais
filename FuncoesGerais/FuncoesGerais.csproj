@@ -55,6 +55,12 @@
     <Compile Include="Componentes\DataGridViewCustomizado.Designer.cs">
       <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Componentes\DateTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\DateTextBox.Designer.cs">
+      <DependentUpon>DateTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Componentes\LabelComValor.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\DataGridViewCustomizado.resx">
       <DependentUpon>DataGridViewCustomizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\DateTextBox.resx">
+      <DependentUpon>DateTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\PanelForm.resx">
       <DependentUpon>PanelForm.cs</DependentUpon>
